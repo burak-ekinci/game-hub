@@ -8,7 +8,7 @@ interface FetchResponse<T> {
     results : T[]
 }
 
-const useGenres = <T>(endpoint : string, requestConfig? : AxiosRequestConfig, deps?: any[]) => {
+const useData = <T>(endpoint : string, requestConfig? : AxiosRequestConfig, deps?: any[]) => {
   
     const [data, setData] = useState<T[]>([]);
     const [error, setError] = useState("");
@@ -35,4 +35,4 @@ const useGenres = <T>(endpoint : string, requestConfig? : AxiosRequestConfig, de
       return {data, error , isLoading}
 }
 
-export default useGenres
+export default useData
