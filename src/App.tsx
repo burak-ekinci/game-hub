@@ -39,7 +39,7 @@ function App() {
         </GridItem>
       </Show>
 
-      <GridItem area={"main"}>
+      <GridItem area={"main"} margin={5}>
         <PlatformSelector
           selectedPlatform={gameQuery.platform}
           onSelectPlatform={(platform) =>
