@@ -26,8 +26,9 @@ const useGames = (gameQuery : GameQuery) => useData<Game>(
 {
   params: {
     genres : gameQuery.genre?.id,
-    platforms: gameQuery.platform?.id
+    platforms: gameQuery.platform?.id,
+    search: gameQuery.searchText
   }},
- [gameQuery.genre?.id, gameQuery.platform?.id])
+ [gameQuery.genre?.id, gameQuery.platform?.id , gameQuery.searchText])
 
 export default useGames
